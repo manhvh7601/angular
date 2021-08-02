@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Comedy"
+    },
+    {
+      "id": 2,
+      "name": "Chuyển Sinh"
+    },
+    {
+      "id": 3,
+      "name": "Cooking"
+    },
+    {
+      "id": 4,
+      "name": "Kiếm Hiệp"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Ngô Tất Tố"
+    },
+    {
+      "id": 2,
+      "name": "Tố Hữu"
+    },
+    {
+      "id": 3,
+      "name": "Xuân Quỳnh"
+    },
+    {
+      "id": 4,
+      "name": "Thạch Lam"
+    }
+  ],
+  "comics": [
+    {
+      "id": 1,
+      "name": "THỰC LINH VUONG",
+      "image": "http://st.imageinstant.net/data/comics/232/thuc-linh-vuong.jpg",
+      "categoryId": 2,
+      "authorId": 4,
+      "statusId": 2,
+      "views": 3124124
+    },
+    {
+      "id": 2,
+      "name": "ĐẦU BẾP TRỨ DANH",
+      "image": "http://st.imageinstant.net/data/comics/123/dau-bep-tru-danh.jpg",
+      "categoryId": 2,
+      "authorId": 1,
+      "statusId": 2,
+      "views": 1426604
+    },
+    {
+      "id": 3,
+      "name": "CUỘC CHIẾN ẨM THỰC",
+      "image": "http://st.nhattruyen.com/data/comics/240/cuoc-chien-am-thuc.jpg",
+      "categoryId": 1,
+      "authorId": 3,
+      "statusId": 1,
+      "views": 20895939
+    },
+    {
+      "id": 4,
+      "name": "TA LUYỆN KHÍ BA NGÀN NĂM",
+      "image": "http://st.nhattruyen.com/data/comics/155/ta-luyen-khi-ba-ngan-nam.png",
+      "categoryId": 1,
+      "authorId": 2,
+      "statusId": 2,
+      "views": 20301229
+    },
+    {
+      "id": 5,
+      "name": "TẬN KIỂN MINH THẦN",
+      "image": "http://st.nhattruyen.com/data/comics/58/tan-kien-minh-than.jpg",
+      "categoryId": 4,
+      "authorId": 4,
+      "statusId": 1,
+      "views": 84624
+    },
+    {
+      "id": 9,
+      "name": "truyen 123",
+      "image": "https://firebasestorage.googleapis.com/v0/b/ecommerce-f0793.appspot.com/o/Uploads%2F1619449157544?alt=media&token=893d274f-996b-4e98-b9f8-ce6f0548e0ba",
+      "authorId": 1,
+      "categoryId": 1,
+      "statusId": "1",
+      "views": 2
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "name": "True"
+    },
+    {
+      "id": 2,
+      "name": "False"
+    }
+  ]
+}

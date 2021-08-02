@@ -1,0 +1,36 @@
+<form action="" (submit)="search($event)">
+    <div class="form-group">
+        <label for="">Tìm kiếm</label>
+        <input type="text" class="form-control" [value]="keyword" (keyup)="search($event)">
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên danh mục</th>
+            <th scope="col">Số lượng truyện</th>
+            <th>
+                <a href="javascript:;" class="btn btn-success" routerLink="/admin/danh-muc/tao-moi">Tạo mới</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of cates;index as i">
+            <td>{{i+1}}</td>
+            <td>{{c.name}}</td>
+            <td>
+                <span *ngIf="c.comics != undefined">
+                {{c.comics.length}}
+            </span>
+            </td>
+            <td>
+                <button routerLink="/admin/danh-muc/edit/{{c.id}}" class="btn btn-info">Update</button>
+                <button (click)="removeCategory(c)" class="btn btn-danger">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

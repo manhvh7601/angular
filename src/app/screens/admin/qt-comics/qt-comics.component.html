@@ -1,0 +1,48 @@
+<form action="">
+    <div class="form-goup">
+        <label for="">Tìm kiếm</label>
+        <input type="text" class="form-control" [value]="keyword" (keyup)="search($event)" placeholder="Search....">
+    </div>
+    <!-- <div class="text-center">
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </div> -->
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tên truyện</th>
+            <th>Ảnh</th>
+            <th>Tác giả</th>
+            <th>Tên danh mục</th>
+            <!-- <th>Trạng thái</th> -->
+            <th>Lượng xem</th>
+            <th>
+                <a href="javascript:;" class="btn btn-success" routerLink="/admin/comics/add-comics">Add Comics</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let co of comics; index as i">
+            <td>{{i+1}}</td>
+            <td>{{co.name}}</td>
+            <td><img [src]="co.image" width="200" ></td>
+            <td>
+                <span *ngIf="co.author">
+                    {{co.author.name}}
+                </span>
+            </td>
+            <td>
+                <span *ngIf="co.category">
+                    {{co.category.name}}
+                </span>
+            </td>
+            <!-- <td>{{co.status ? " Đã hoàn thành " : " Đang tiến hành "}}</td> -->
+            <td>{{co.views}}</td>
+            <td>
+                <button routerLink="/admin/comics/edit/{{co.id}}" class="btn btn-info">Update</button>
+                <button (click)="removeComics(co)" class="btn btn-danger">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
